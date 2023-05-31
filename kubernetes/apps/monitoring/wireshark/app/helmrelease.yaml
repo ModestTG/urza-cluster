@@ -21,11 +21,6 @@ spec:
   upgrade:
     remediation:
       retries: 5
-  dependsOn:
-    - name: kyverno
-      namespace: kyverno
-    - name: ingress-nginx
-      namespace: networking
   values:
     image:
       repository: lscr.io/linuxserver/wireshark
