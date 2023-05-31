@@ -53,7 +53,7 @@ spec:
           hajimari.io/enable: "true"
           hajimari.io/icon: shark
         hosts:
-          - host: &host "wireshark.${PUBLIC_DOMAIN}"
+          - host: &host "wireshark.${SECRET_DOMAIN}"
             paths:
               - path: /
                 pathType: Prefix
