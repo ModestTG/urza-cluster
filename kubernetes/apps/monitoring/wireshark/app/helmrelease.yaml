@@ -51,7 +51,7 @@ spec:
         ingressClassName: nginx
         annotations:
           hajimari.io/enable: true
-          hajimari.io/icon: shark
+          hajimari.io/icon: mdi:shark
         hosts:
           - host: &host "wireshark.${SECRET_DOMAIN}"
             paths:
