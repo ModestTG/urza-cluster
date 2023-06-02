@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
   - ./namespace.yaml
   - ./kubernetes-dashboard/ks.yaml
-  # - ./wireshark/ks.yaml
+  - ./wireshark/ks.yaml
   - ./grafana/ks.yaml
   - ./kube-prometheus-stack/ks.yaml
