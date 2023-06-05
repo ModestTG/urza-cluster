@@ -5,7 +5,7 @@ metadata:
   name: storage-nfs
   namespace: flux-system
 spec:
-  path: ./kubernetes/apps/storage/csi-nfs-driver/app
+  path: ./kubernetes/apps/storage/csi-driver-nfs/app
   prune: true
   sourceRef:
     kind: GitRepository
