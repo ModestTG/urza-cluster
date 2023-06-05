@@ -18,3 +18,4 @@ resources:
   - ./stakater.yaml
   - ./weave-gitops.yaml
   - ./longhorn.yaml
+  - ./csi-driver-nfs.yaml
