@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - ./namespace.yaml
   - ./longhorn/ks.yaml
+  - ./csi-nfs-driver/ks.yaml
