@@ -5,6 +5,8 @@ metadata:
   name: wireshark
   namespace: flux-system
 spec:
+  dependsOn:
+    - name: storage-longhorn-recurring-jobs
   path: ./kubernetes/apps/monitoring/wireshark/app
   prune: true
   sourceRef:

@@ -44,7 +44,7 @@ spec:
       config:
         enabled: true
         mountPath: /config
-        existingClaim: wireshark-appdata
+        existingClaim: wireshark-appdata-new
     ingress:
       main:
         enabled: true

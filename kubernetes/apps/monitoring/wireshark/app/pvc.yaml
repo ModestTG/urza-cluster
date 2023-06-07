@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: wireshark-appdata
+  name: wireshark-appdata-new
   namespace: monitoring
 spec:
   accessModes:
