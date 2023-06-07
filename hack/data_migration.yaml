@@ -2,12 +2,13 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  namespace: default  # namespace where the pvc's exist
+  namespace: monitoring  # namespace where the pvc's exist
   name: volume-migration
 spec:
   completions: 1
   parallelism: 1
   backoffLimit: 3
+  ttlSecondsAfterFinished: 100
   template:
     metadata:
       name: volume-migration
@@ -29,7 +30,7 @@ spec:
       volumes:
         - name: old-vol
           persistentVolumeClaim:
-            claimName: data-source-pvc # change to data source pvc
+            claimName: wireshark-appdata # change to data source pvc
         - name: new-vol
           persistentVolumeClaim:
-            claimName: data-target-pvc # change to data target pvc
+            claimName: wireshark-appdata-new # change to data target pvc
